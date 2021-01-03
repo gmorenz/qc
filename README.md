@@ -67,7 +67,7 @@ was going to spend more time on this I might consider rule changes to check whet
 of the move completing before measuring `f3`. However I would probably not go with the https://quantumchess.net/play
 implementation because it does not check this completely, e.g. the following sequence of moves (all for white)
 measures the rook on a4 on the last move despite the d1a4 move not being able to sucesfully complete:
-`a2a4, a4a5, a1^a3a4, c2c4, g1f3, f3d4, d4^b3c2, d1a4.m1` ![board image](qunatumchess.net.unneeded.measure.png).
+`a2a4, a4a5, a1^a3a4, c2c4, g1f3, f3d4, d4^b3c2, d1a4.m1` ![board image](quantumchess.net.unneeded-measure.png).
 
 The https://quantchess.net/play implementation appears to make a different measurement than me at the end of
 the move sequence `e2e4 e7e5 f1^d3c4 b8^a6c6 d3a6.m?` - perhaps somehow "knowing" that the two bishops
