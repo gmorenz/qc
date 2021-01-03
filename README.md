@@ -8,7 +8,7 @@ It's not heavily tested and probably has some bugs still lying around, but it wo
 
 Out of respect for the [attempt to monitize](https://quantumchess.net/) quantum chess by the people who invented the rules, `chess.rs`, `term.rs`, and `druid.rs` are (temporarily?) *not* publicly licensed apart from the license required by githubs TOS. That means you can clone and fork this repo (github's TOS), you can build and privately run the executable in most jurisdictions (that's just not copyright infringment), you can not publicly perform the work, redistribute those files, or do most other things with them.
 
-`gates.rs`,` `qcomp.rs`, and `qcomp_explainable.rs` are released under both MIT and Apache2 licenses, to match up with the rest of the rust ecosystem.
+`gates.rs` `qcomp.rs`, and `qcomp_explainable.rs` are released under both MIT and Apache2 licenses, to match up with the rest of the rust ecosystem.
 
 The svg files were borrowed from [wikimedia commons](https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces) and are licensed CC-BY-SA-3.0.
 
