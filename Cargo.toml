@@ -1,0 +1,22 @@
+[package]
+name = "qc"
+version = "0.1.0"
+authors = ["Greg Morenz <morenzg@gmail.com>"]
+edition = "2018"
+
+[lib]
+path = "src/chess.rs"
+
+[dependencies]
+aljabar = "1.0.2"
+# Only used for gui...
+druid = { git = "https://github.com/gmorenz/druid", branch="gregs-changes", features = ["im", "svg"] }
+im = "15.0.0"
+
+[[bin]]
+name = "qc-term"
+path = "src/term.rs"
+
+[[bin]]
+name = "qc-druid"
+path = "src/druid.rs"
