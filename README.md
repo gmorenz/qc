@@ -58,7 +58,7 @@ I expect.
 
 ## Differences from the https://quantumchess.net/play/ implementation
 
-The https://quantchess.net/play implementation appears to implement additional move legality checking, which
+The https://quantumchess.net/play implementation appears to implement additional move legality checking, which
 checks that a move could possibly complete before allowing it. For example after `g1^f3h3`, `d1f3` is still
 disallowed because it is moving through a (definitely there) pawn. In this implementation (and in my reading of
 the paper) `d1f3` is allowed because it is a legal chess move for the queen on `d1`, and it changes the state
@@ -69,7 +69,7 @@ implementation because it does not check this completely, e.g. the following seq
 measures the rook on a4 on the last move despite the d1a4 move not being able to sucesfully complete:
 `a2a4, a4a5, a1^a3a4, c2c4, g1f3, f3d4, d4^b3c2, d1a4.m1` ![board image](quantumchess.net.unneeded-measure.png).
 
-The https://quantchess.net/play implementation appears to make a different measurement than me at the end of
+The https://quantumchess.net/play implementation appears to make a different measurement than me at the end of
 the move sequence `e2e4 e7e5 f1^d3c4 b8^a6c6 d3a6.m?` - perhaps somehow "knowing" that the two bishops
 resulting from the `f1^d3c4` split can't collide when making the decision of what to measure? It seems to me
 that my implementation matches the paper.
